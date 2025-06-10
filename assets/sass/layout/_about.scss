@@ -1,0 +1,14 @@
+.about-us{
+    .about-block{
+        .analysis{
+            padding: clamp(20px,1.667vw,40px);
+            border-radius: $br-24;
+            border: 0.5px solid $light-gray;
+            transition: $transition;
+            &:hover{
+                background-color: $accent-2;
+                transition: $transition;
+            }
+        }
+    }
+}

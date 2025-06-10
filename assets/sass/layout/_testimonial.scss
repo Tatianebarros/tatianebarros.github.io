@@ -1,0 +1,33 @@
+.testimonial {
+    .rating-text {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: clamp(4px, 0.313vw, 8px) clamp(6px, 0.417vw, 12px);
+        background-color: $accent-1;
+        border-radius: $br-40;
+        .link{
+            border-radius: $br-12;
+            background-color: $white;
+            padding: 4px 6px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .testimonials-slider{
+        margin: 0 -12px;
+        .testimonials-card{
+            margin: 0 12px;
+            border-radius: $br-24;
+            border: 1px solid $accent-1;
+            padding: clamp(16px,1.25vw,30px);
+        }
+    }
+    .map-image{
+        position: relative;
+    }
+    .flag-1{
+      
+    }
+}

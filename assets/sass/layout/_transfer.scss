@@ -1,0 +1,29 @@
+.transfer {
+    .transfer-block {
+        padding: clamp(60px, 4.167vw, 100px) clamp(100px, 7.604vw, 160px);
+        background-color: $medium-black;
+        border-radius: $br-24;
+        display: flex;
+        gap: clamp(60px, 4.167vw, 128px);
+        @include media-query(768px) {
+            gap: clamp(38px, 4.167vw, 128px);
+            flex-wrap: wrap;
+            padding: clamp(60px, 4.167vw, 100px) clamp(120px, 7.604vw, 160px);
+        }
+        @include media-query(576px) {
+            gap: clamp(38px, 4.167vw, 128px);
+
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            padding: clamp(13px, 4.167vw, 100px) clamp(46px, 8.604vw, 200px);
+            @include media-query(490px) {
+                padding: clamp(13px, 4.167vw, 100px) clamp(30px, 7.604vw, 200px);
+            }
+        }
+        .about-block {
+            width: clamp(146px, 15.052vw, 300px);
+        }
+    }
+}

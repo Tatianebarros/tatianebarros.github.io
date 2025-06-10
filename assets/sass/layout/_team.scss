@@ -1,0 +1,23 @@
+.team-sec {
+    .team {
+        overflow: hidden;
+        border-radius: $br-24;
+        .team-img {
+            -webkit-transition: all 0.6s linear 0s;
+            transition: all 0.6s linear 0s;
+        }
+        &:hover {
+            .team-img {
+                -webkit-transform: scale(1.1);
+                transform: scale(1.1);
+                -webkit-transition: all 0.6s linear 0s;
+                transition: all 0.6s linear 0s;
+            }
+        }
+    }
+    .text-block {
+        padding: 0 clamp(16px, 1.25vw, 30px);
+        display: flex;
+        justify-content: space-between;
+    }
+}

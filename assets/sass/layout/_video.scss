@@ -1,0 +1,30 @@
+.video-sec{
+    .video-block{
+        background: url(../media/backgrounds/contact.png);
+        padding: clamp(90px,6.667vw,150px) clamp(48px,3.333vw,80px);
+        background-position: center;
+        background-size: cover;
+        border-radius: $br-48;
+        @include media-query(576px){
+            padding: clamp(60px, 6.667vw, 150px) clamp(18px, 3.333vw, 80px);
+        }
+    }
+    img{
+        width: clamp(120px,9.115vw,250px);
+        @include media-query(576px){
+            width: clamp(80px,9.115vw,250px);
+        }
+    }
+}
+.video-sec-2{
+    .video-block{
+        background: url(../media/backgrounds/contact2.png);
+        padding: clamp(90px,6.667vw,150px) clamp(48px,3.333vw,80px);
+        background-position: center;
+        background-size: cover;
+        border-radius: $br-48;
+    }
+    img{
+        width: clamp(120px,9.115vw,250px);
+    }
+}

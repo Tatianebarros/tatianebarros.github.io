@@ -1,0 +1,50 @@
+footer {
+    padding: clamp(55px, 4.167vw, 120px) 0 clamp(16px, 1.25vw, 35px) 0;
+    .footer-links {
+        li {
+            a {
+                p {
+                    transition: $transition;
+                    &:hover {
+                        color: $accent-1 !important;
+                        transition: $transition;
+                    }
+                }
+            }
+        }
+    }
+    .newsletter {
+        display: flex;
+        form {
+            width: 100%;
+            .input-field{
+                border-bottom: 1px solid $light-gray;
+                padding-bottom: 16px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 80%;
+                @include media-query(490px){
+                    width: 100%;  
+                }
+                input {
+                    background: none;
+                    border: none;
+                    width: 100%;
+                    &:focus {
+                        border: none;
+                    }
+                    &:focus-visible {
+                        border: none;
+                        outline: none;
+                    }
+                }
+                button {
+                    flex-shrink: 0;
+                    background: none;
+                    border: none;
+                }
+            }
+        }
+    }
+}

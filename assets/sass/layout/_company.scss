@@ -1,0 +1,45 @@
+
+.company{
+    .company-block{
+        background: url(../media/backgrounds/work.png);
+        background-color: $medium-black;
+        background-position: center;
+        background-size: 100% 100%;
+        border-radius: $br-48;
+        padding: clamp(48px, 3.333vw, 80px);
+        @include media-query(576px){
+            padding: clamp(24px, 3.333vw, 80px);  
+        }
+    }
+    .blocks{
+        border: 0.5px solid $white;
+        border-radius: $br-24;
+        padding: clamp(20px,1.667vw,58px);
+        transition: $transition;
+        img{
+            width: clamp(55px,4.167vw,60px);
+            @include media-query(768px){
+            width: clamp(48px,4.167vw,60px);
+            }
+        }
+        &:hover{
+            background-color: $accent-3;
+            transition: $transition;
+            h6{
+            color: $medium-black;
+            }
+        }
+    }
+}
+.company-2{
+    .company-block{
+      padding: clamp(24px,1.667vw,40px);
+      border: 0.5px solid $light-gray;
+      border-radius: $br-24;
+      transition: $transition;
+      &:hover{
+        transition: $transition;
+        background-color: $accent-2;
+      }
+    }
+}

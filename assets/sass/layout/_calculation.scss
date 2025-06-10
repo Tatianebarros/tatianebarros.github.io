@@ -1,0 +1,67 @@
+.calculation{
+    .calculation-block{
+        padding: clamp(8px, 0.625vw, 24px) clamp(48px, 3.333vw, 128px) clamp(8px, 0.625vw, 24px) clamp(18px, 1.25vw, 48px);
+        border-radius: $br-16;
+        border: 0.5px solid $light-gray;
+        transition: $transition;
+        margin-bottom: clamp(18px, 1.25vw, 48px);
+        &:hover{
+        transition: $transition;
+        background-color: $accent-2;
+        }
+        .icon-block{
+            border: 1px solid $light-gray;
+            display: flex;
+            justify-content: center;
+            border-radius: $br-10;
+            height:clamp(14px,1.042vw,24px);
+            width:clamp(14px,1.042vw,24px);
+        }
+    }
+    .calculation-graph{
+        padding: clamp(18px, 1.25vw, 48px);
+        border-radius: $br-24;
+        border: 0.5px solid $light-gray;
+        .calculation-box{
+            border-radius: $br-32;
+            background-color: $accent-2;
+            padding: clamp(4px, 0.417vw, 16px)  clamp(8px, 0.625vw, 24px);
+        }
+        .blocks{
+          border-left: 2px dashed $light-gray;
+          padding-left: 24px;
+          @include media-query(1024px){
+            border-left: none;
+          }
+          .calculations-block{
+            padding: 12px 16px;
+            border-radius: $br-16;
+            border: 0.5px solid $light-gray;
+            transition: $transition;
+            margin-bottom: clamp(18px, 1.25vw, 48px);
+            &:hover{
+            transition: $transition;
+            background-color: $accent-2;
+            }
+          }
+        }
+    }
+    .chart_analytics{
+      width: 94%;
+      height: 50vh;
+      @include media-query(1024px){
+        height: 35vh;
+      }
+      @include media-query(576px){
+        height: 43vh;
+      }
+      @include media-query(490px){
+        height: 32vh;
+      }
+      @include media-query(430px){
+        height: 22vh;
+      }
+      canvas{
+      }
+    }
+}

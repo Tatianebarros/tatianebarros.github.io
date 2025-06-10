@@ -1,0 +1,111 @@
+.achievements{
+    .heading{
+        margin-bottom: clamp(100px,7.813vw,200px);
+        @include media-query(576px){
+            margin-bottom: clamp(60px,7.813vw,200px);
+           }
+    }
+    .processbar{
+        background: $light-gray;
+        height: 2px;
+        opacity: 1;
+        width: 100%;
+        @include media-query(576px){
+         display: none;
+        }
+    }
+    .process-card{
+        margin-top: -93px;
+       @include media-query(1400px){
+        margin-top: -70px;
+    }
+    @include media-query(1200px){
+        margin-top: -64px;
+    }
+    @include media-query(992px){
+        margin-top: -56px;
+    }
+    @include media-query(576px){
+        margin-top: 28px;
+    }
+    @include media-query(576px){
+        border-left: 2px solid $medium-black;
+        padding-left: 20px;
+       }
+        h1{
+            transition: $transition;
+            color: $light-gray;
+            &:hover{
+                color: $accent-1;
+                transition: $transition;
+            }
+        }
+        .step-count{
+            margin-bottom: 14px;
+            font-size: 18px;
+            @include media-query(490px){
+                margin-bottom: 0;
+                width: 84px;
+            }
+        }
+        .process-block {
+            position: relative;
+    
+            .icon{
+                width: 16px;
+                height: 16px;
+                border-radius: 50%;
+                background: $accent-1;
+                margin-bottom: 16px;
+                @include media-query(576px){
+                    position: absolute;
+                   top: 0px;
+                   left: -28px;
+                   }
+                }
+            }
+            .top-text{
+                display: flex;
+                align-items: center;
+                gap: $gap-12;
+                margin-bottom: 12px;
+                @include media-query(490px){
+                    margin-bottom: 0;
+                }
+                .icon-box {
+                    width: clamp(40px, 2.5vw, 64px);
+                    height: clamp(40px, 2.5vw, 64px);
+                    display: grid;
+                    align-items: center;
+                    justify-content: center;
+                    transition: $transition;
+                    border-radius: $br-24;
+        
+                    svg {
+                        width: clamp(20px, 1.563vw, 48px);
+                        height: clamp(20px, 1.563vw, 48px);
+                        transition: $transition;
+                        
+                        path {
+                            transition: $transition;
+                        }
+                    }
+                }
+            }
+    
+    
+            .hovered-text {
+                opacity: 0;
+                transition: $transition;
+                padding-left: 16px;
+                border-left: 2px solid $accent-1;
+                @include media-query(490px){
+                    position: absolute;
+                    left: 40px;
+                    top: 48px;
+                    opacity: 1;
+                    border: 0;
+                }
+            }
+        }
+    }

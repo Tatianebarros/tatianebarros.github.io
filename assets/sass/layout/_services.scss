@@ -1,0 +1,58 @@
+.services{
+    .services-wrapper{
+        .services-container{
+            position: relative;
+            &::after{
+                content: '';
+                position: absolute;
+                height: 100%;
+                width: 1px;
+                background: $accent-1;
+                left: 50%;
+                top: 0%;
+                background-image: linear-gradient(1800deg, transparent, transparent 50%, #f8ffed 50%, #f8ffed 100%), linear-gradient(180deg, #45474f, #45474f, #45474f, #45474f, #45474f);
+                background-size: 3px 14px, 100% 20px;
+                border: none;
+                @include media-query(991px){
+                    display: none;
+                }
+            }
+            .service-block{
+                position: relative;
+                .service-icon{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    z-index: 15;
+                    @include media-query(991px){
+                        display: none;
+                    }
+                }
+            }
+           
+        }
+        .img-service{
+            border-radius: $br-32;
+        }
+        .left-block{
+            padding-right: 60px;
+            @include media-query(991px){
+                 padding: 0;
+            }
+        }
+        .right-block{
+            padding-left: 64px;
+            @include media-query(991px){
+                padding: 0;
+           }
+        }
+    }
+}
+.service-detail{
+    .service-block{
+        padding: clamp(10px, 2.5vw, 60px) clamp(18px, 1.25vw, 48px);
+        border-radius: $br-24;
+        border: 0.5px solid $accent-1;
+    }
+}
