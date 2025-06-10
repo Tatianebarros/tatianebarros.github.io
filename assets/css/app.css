@@ -481,15 +481,15 @@ strong {
 Helpers
 -------------------------*/
 .color-primary {
-  color: #77a637 !important;
+  color: #0077CC !important;
 }
 
 .color-sec {
-  color: #edffd3 !important;
+  color: #003B6F !important;
 }
 
 .color-ter {
-  color: #f8ffed !important;
+  color: #003B6F !important;
 }
 
 .medium-black {
@@ -521,15 +521,15 @@ Helpers
 }
 
 .bg-primary {
-  background: #77a637 !important;
+  background: #0077CC !important;
 }
 
 .bg-sec {
-  background: #edffd3 !important;
+  background: #003B6F !important;
 }
 
 .bg-ter {
-  background: #f8ffed !important;
+  background: #F5F7FA !important;
 }
 
 .bg-medium-black {
